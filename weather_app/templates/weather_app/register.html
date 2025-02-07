@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Register{% endblock title %}
+
+{% block css %} 
+<link rel="stylesheet" href="{% static 'register.css' %}">
+{% endblock css %}
+
+{% block content %}
+<header>
+  <h1>Weather App</h1>
+  <nav>
+    <div id="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+      </ul>
+  </div>
+  </nav>
+</header>
+
+<main>
+  <section class = "form-group">
+    <div class="form-header">
+      <h2>Register</h2>
+      <p>Register for an account</p>
+  </div>
+    <form action="{% url 'register' %}" method="POST">
+      {% csrf_token %}
+      <div id="form-group">
+      {% for field in form %}
+        {{ field.label_tag }}
+        <br> 
+        {{ field }}
+        <br>
+        {{ field.errors }}
+      {% endfor %}
+    </div>
+
+      <button type="submit">Register</button>
+    </form>
+  </section>
+</main>
+{% endblock content %}
