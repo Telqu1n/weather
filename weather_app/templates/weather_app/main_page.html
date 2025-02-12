@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Main Page {% endblock title %}
+
+
+{% block css %}
+  <link rel="stylesheet" href="{% static 'main_page.css' %}">
+{% endblock css %}
+
+
+{% block content %}
+
+  <div class="container1">
+    <h1>Welcome to the online health App</h1>
+    <section id="welcome-section">
+      <p>Welcome to the ultimate free online tool for tracking health <span id="condition"></span></p>
+    </section>
+  </div> 
+
+  <div class="container1">
+    <section id="pollution-section">
+      <h2>Pollution Level</h2>
+      <p>Air Quality Index (AQI): <span id="aqi"></span></p>
+      <p>PM2.5: <span id="pm25"></span></p>
+      <p>PM10: <span id="pm10"></span></p>
+    </section>
+  </div>
+
+  <div class="container1">
+    <section id="health-section">
+      <h2>Personal Health Data</h2>
+      <p>Heart Rate: <span id="heart-rate"></span></p>
+      <p>Blood Pressure: <span id="blood-pressure"></span></p>
+    </section>
+  </div>
+{% endblock content %}</section></div>

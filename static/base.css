@@ -1,4 +1,53 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Markazi+Text:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
   margin: 0;
   padding: 0;
+  font-family: "Libre Baskerville", serif;
+  font-style: normal;
+}
+
+header{
+  background-color: #0550a7;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1px;
+  font-weight: bolder;
+}
+
+.nav{
+  width: 100%;
+
+}
+
+nav li{
+  display: inline;
+  margin: 0 1rem;
+  list-style: none;
+  color: white;
+}
+
+nav li a{
+  color: white;
+  text-decoration: none;
+}
+
+nav li a:hover{
+  color: #68b7d1;
+  transform: translateY(-2px);
+}
+
+h2 p{
+  background-color: #0550a7;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  border-radius: 1px;
+}
+
+.form-header{
+  text-align: center;
+  font-size: 1.7rem;
 }

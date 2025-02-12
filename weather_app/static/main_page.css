@@ -1,0 +1,17 @@
+.container1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #e3e9f0 ;
+    color: rgb(60, 60, 60) ;
+    border: 1px solid #e3e9f0 ;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  }
+
+.container1:hover{
+    background-color: #d9e2ec ;
+    border-color: #d9e2ec ;
+    transform: translateY(4px);
+  }

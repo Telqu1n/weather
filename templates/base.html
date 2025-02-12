@@ -9,8 +9,21 @@
   <link rel="stylesheet" href="{% static 'base.css' %}">
   {% block css %} {% endblock css %}
 </head>
+
 <body>
-  
+  <header>
+    <h1>Health App</h1>
+    <nav>
+      <div id="nav">
+        <ul>
+          <li><a href="{% url 'main-page' %}">Home</a></li>
+          <li><a href="{% url 'login' %}">Login</a></li>
+          <li><a href="{% url 'register' %}">Register</a></li>
+        </ul>
+    </div>
+    </nav>
+  </header>
+
 {% block content %}
   
 {% endblock content %}
